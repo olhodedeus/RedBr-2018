@@ -144,6 +144,7 @@ $ cd ..
 $ git clone https://github.com/olhodedeus/RedBr-2018.git
 $ cd RedBr-2018
 $ sudo chmod +x iniciar.sh
+$ sudo chmod +x polling.lua
 ```
 
 Before you start the bot, you have to start the Redis process.
