@@ -209,20 +209,8 @@ Pull requests in the `master` branch won't be considered, unless they are intend
 
 ## Credits
 
+[RememberTheAir](https://github.com/RememberTheAir), for the original [GruopButler](https://github.com/RememberTheAir/GroupButler)
+
 [Topkecleon](https://github.com/topkecleon), for the original [otouto](https://github.com/topkecleon/otouto)
 
-[Iman Daneshi](https://github.com/imandaneshi) and [Tiago Danin](https://github.com/TiagoDanin), for [Jack-telegram-bot](https://github.com/Imandaneshi/jack-telegram-bot)
-
-[Cosmonawt](https://github.com/cosmonawt), for his [Lua library](https://github.com/cosmonawt/lua-telegram-bot) for the Bot API
-
-[Yago Pérez](https://github.com/yagop) for his [telegram-bot](https://github.com/yagop/telegram-bot)
-
-The [Werewolf](https://github.com/parabola949/Werewolf) guys, for aiding the spread of the bot
-
-Lucas Montuano, for helping me a lot in the debugging of the bot
-
-All the Admins of our [discussion groups](https://telegram.me/gbgroups) about Group Butler
-
-All the people who reported bugs and suggested new stuff
-
-Le Laide
+Special thanks to the [Murkiriel](https://github.com/murkiriel) 
