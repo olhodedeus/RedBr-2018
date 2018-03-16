@@ -141,7 +141,7 @@ $ cd ..
 # Clone the repository and give the launch script permissions to be executed
 # If you want to clone the beta branch, use git clone with the [-b beta] option
 
-$ git clone https://github.com/RememberTheAir/GroupButler.git
+$ git clone https://github.com/olhodedeus/RedBr-2018.git
 $ cd RedBr-2018
 $ sudo chmod +x iniciar.sh
 ```
