@@ -6,15 +6,15 @@ This bot has been created to help people administrate their groups, and includes
 
 Group Butler was born as an [otouto](https://otou.to) [v3.1](https://github.com/topkecleon/otouto/tree/26c1299374af130bbf8457af904cb4ea450caa51) ([`@mokubot`](https://telegram.me/mokubot)), but it has been turned into an administration bot.
 
-#### Group Butler on Telegram:
+#### RED br on Telegram:
 
-- [`@GroupButler_bot`](https://telegram.me/GroupButler_Bot)
+- [`@RedBrBot`](https://telegram.me/RedBrBot)
 	- **_branch_**: `master`
-	- **_channel_**: [`@GroupButler_ch`](https://telegram.me/groupbutler_ch).
+	- **_channel_**: [`@Redlol`](https://telegram.me/redlol).
+	
+### Group for questions or suggestions:
+- [`Group Redlol`](https://telegram.me/GrupoRedLol)
 
-- [`@GBReborn_bot`](https://telegram.me/GBReborn_bot)
-	- **_branch_**: `beta`
-	- **_channel_**: [`@GroupButler_beta`](https://telegram.me/GroupButler_beta).
 
 * * *
 
@@ -97,6 +97,7 @@ List of required packages:
 - `make`
 - `unzip`
 - `curl`
+- `utf8`
 - `libcurl4-gnutls-dev`
 
 You will need some other Lua modules too, which can be (and should be) installed through the Lua package manager LuaRocks.
@@ -134,14 +135,15 @@ $ sudo luarocks install lua-term
 $ sudo luarocks install serpent
 $ sudo luarocks install lua-cjson
 $ sudo luarocks install Lua-cURL
+$ sudo luarocks install luautf8
 $ cd ..
 
 # Clone the repository and give the launch script permissions to be executed
 # If you want to clone the beta branch, use git clone with the [-b beta] option
 
 $ git clone https://github.com/RememberTheAir/GroupButler.git
-$ cd GroupButler
-$ sudo chmod +x launch.sh
+$ cd RedBr-2018
+$ sudo chmod +x iniciar.sh
 ```
 
 Before you start the bot, you have to start the Redis process.
