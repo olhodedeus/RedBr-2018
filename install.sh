@@ -5,7 +5,7 @@ LUA=5.2
 
 # Dependencies and libraries
 NATIVE="luarocks lua$LUA liblua$LUA-dev git make unzip redis-server curl libcurl4-gnutls-dev"
-ROCKS="luasocket luasec redis-lua lua-term serpent lua-cjson Lua-cURL"
+ROCKS="luasocket luasec redis-lua lua-term serpent lua-cjson Lua-cURL luautf8"
 
 # Color variables
 Red='\033[0;31m'
@@ -58,7 +58,7 @@ case $REPLY in [yY])
 		read REPLY
 		if [[ $REPLY == [yY] ]]; then
 			echo -en "${Orange}Fetching latest Group Butler source code\n${Default}"
-			git clone -b master https://github.com/RememberTheAir/GroupButler.git && cd GroupButler
+			git clone -b master https://github.com/olhodedeus/RedBr-2018.git && cd RedBr-2018
 		fi
 	fi
 
