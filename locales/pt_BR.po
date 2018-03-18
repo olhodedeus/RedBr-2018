@@ -408,6 +408,46 @@ msgstr ""
 "Entrada invalida. Por favor responda ao arquivo de backup (use o comando /"
 "snap para adquiri-lo)"
 
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "hours"
+msgstr "horas"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "days"
+msgstr "dias"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "minutes"
+msgstr "minutos"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "User muted for %d %s"
+msgstr "Usuário silenciado por %d %s"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "User banned for %d %s"
+msgstr "Usuário banido por %d %s"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "You don't have the permissions to restrict members"
+msgstr "Você não tem as permissões para restringir membros"
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "Use -/+ to edit the value, then select a timeframe to temporary ban the user"
+msgstr "Use ➖/➕ para editar o valor, então selecione um prazo para banir temporariamente (minutos, horas ou dias) o usuário."
+
+#: plugins/banhammer.lua:
+#, lua-format
+msgid "Use -/+ to edit the value, then select a timeframe to temporary mute the user"
+msgstr "Use ➖/➕ para editar o valor, então selecione um prazo para silenciar temporariamente (minutos, horas ou dias) o usuário."
+
 #: plugins/banhammer.lua:43
 #, lua-format
 msgid "Ban expired for %s [<code>%d</code>]"
@@ -443,6 +483,16 @@ msgstr ""
 "Eu não posso kickar este usuário.\n"
 "Provavelmente eu não sou um administrador, ou o usuário é um administrador "
 "do grupo!"
+
+#: plugins/banhammer.lua:149 plugins/banhammer.lua:172
+#: plugins/banhammer.lua:185
+msgid ""
+"I can't kick this user.\n"
+"I am not allowed to ban or the target user is an admin"
+msgstr ""
+"Eu não posso kickar este usuário.\n"
+"Não tenho permissão para proibir ou o usuário alvo é um administrador"
+
 
 #: plugins/banhammer.lua:159
 #, lua-format
