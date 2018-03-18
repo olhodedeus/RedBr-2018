@@ -153,7 +153,21 @@ function api.kickChatMember(chat_id, user_id, until_date)
 
 	return success, code, description
 end
+function api.restrictChatMemberTempMute(chat_id, user_id, until_date)
 
+	local url = BASE_URL .. '/restrictChatMember?chat_id=' .. chat_id .. '&user_id=' .. user_id
+
+	if until_date then
+		url = url .. '&until_date=' .. until_date
+	end
+
+local success, code, description = sendRequest(url)
+	if success then
+		db:srem(string.format('chat:%d:members', chat_id), user_id)
+	end
+
+	return success, code, description
+end
 local function code2text(code)
 	--the default error description can't be sent as output, so a translation is needed
 	if code == 159 then
@@ -175,6 +189,17 @@ end
 function api.banUser(chat_id, user_id, until_date)
 
 	local res, code = api.kickChatMember(chat_id, user_id, until_date) --try to kick. "code" is already specific
+
+	if res then --if the user has been kicked, then...
+		return res --return res and not the text
+	else ---else, the user haven't been kicked
+		local text = code2text(code)
+		return res, code, text --return the motivation too
+	end
+end
+function api.tempmuteUser(chat_id, user_id, until_date)
+
+	local res, code = api.restrictChatMemberTempMute(chat_id, user_id, until_date) --try to kick. "code" is already specific
 
 	if res then --if the user has been kicked, then...
 		return res --return res and not the text
