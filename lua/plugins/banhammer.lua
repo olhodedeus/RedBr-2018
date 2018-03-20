@@ -202,6 +202,7 @@ function plugin.onCallbackQuery(msg, matches)
 		elseif matches[1] == 'val' then
 			local user_id = matches[3]
 			local key = ('chat:%d:%s:tbanvalue'):format(msg.chat.id, user_id)
+			local key = ('chat:%d:%s:tmutevalue'):format(msg.chat.id, user_id)
 			local current_value, new_value
 			current_value = tonumber(db:get(key) or 3)
 			if matches[2] == 'm' then
