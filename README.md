@@ -138,6 +138,7 @@ $ sudo luarocks install serpent
 $ sudo luarocks install lua-cjson
 $ sudo luarocks install Lua-cURL
 $ sudo luarocks install luautf8
+$ sudo luarocks install dkjson
 $ cd ..
 
 # Clone the repository and give the launch script permissions to be executed
