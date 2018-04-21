@@ -22,7 +22,7 @@ BPurple='\033[1;35m'
 BCyan='\033[1;36m'
 Default='\033[0m'
 
-read -p "Do you want me to install Group Butler Bot? (Y/N): "
+read -p "Do you want me to install Red lol Bot? (Y/N): "
 
 case $REPLY in [yY])
 	# Install Dependencies
@@ -54,7 +54,7 @@ case $REPLY in [yY])
 	fi
 
 	if [ ! -d .git ]; then
-		echo -en "${Green}Would you like to clone the source of GroupButler? (Y/N): ${Default}"
+		echo -en "${Green}Would you like to clone the source of Redlol? (Y/N): ${Default}"
 		read REPLY
 		if [[ $REPLY == [yY] ]]; then
 			echo -en "${Orange}Fetching latest Group Butler source code\n${Default}"
