@@ -109,6 +109,8 @@ You can easily install Group Butler by running the following commands:
 ```bash
 # Tested on Ubuntu 16.04
 
+$ sudo apt-get update
+$ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/olhodedeus/RedBr-2018/master/install.sh
 $ bash install.sh
 ```
